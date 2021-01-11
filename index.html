@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64c048ef53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>The Watcher - get any watch you ever dreamt of... at low costs.</title>
+    <style>
+        .nav-item img {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <a href="index.html" class="main-logo mr-5">TheWATcher </a>
+        <!-- Make the cart and wishlist be visible on mobile phones -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/menu.svg" alt="menu button" class="toggler-btn">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/shop.html">Catalog</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="views/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/like_main.svg" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/cart.html" onclick="openCart();"><img src="img/shoppingcart.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- the cart design-->
+    <div class="cart">
+        <a href="#">X</a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/cart1.jpg" alt="">
+                    <div class="group">
+                        <h5>The Watcher</h5>
+
+                        <p>Qty: 1 R400 </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <img src="img/cart5.jpg" alt="">
+                    <div class="group">
+                        <h5>The Watcher</h5>
+
+                        <p>Qty: 1 R400 </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <img src="img/about3.jpg" alt="">
+                    <div class="group">
+                        <h5>The Watcher</h5>
+
+                        <p>Qty: 1 R400 </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <img src="img/about1.jpg" alt="">
+                    <div class="group">
+                        <h5>The Watcher</h5>
+
+                        <p>Qty: 1 R400 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="main-heading">Time Is Money... Isn't it?</h1>
+                    <p>Explore our high-precision timepieces that are perfectly customised to fit with your wardrobe...
+                        Classic, Quality, Professional, Stylish... </p>
+                    <div class="quick-buttons">
+                        <a id="buy" href="views/shop.html">Buy Now</a>
+                        <a id="cart" href="views/cart.html">Cart(4)</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <img src="img/pexels-pixabay-277319.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="items-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading">What's Popular</h1>
+                </div>
+                <div class="col-sm-4 col">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart1.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>The Rider</h6>
+                            <h5> <strike id="strikes">R199</strike> R99</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart2.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>The Emporio</h6>
+                            <h5> <strike id="strikes">R1199</strike> R999</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-sm">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart3.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>Maurice</h6>
+                            <h5> <strike id="strikes">R599</strike> R399</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart4.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>Hunters Race</h6>
+                            <h5> <strike id="strikes">R199</strike> R99</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart5.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>brRun</h6>
+                            <h5> <strike id="strikes">R1999</strike> R999</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-sm">
+                    <a href="views/aboutproduct.html">
+                        <div class="card">
+                            <img src="img/cart6.jpg" alt="">
+                            <div class="ratings">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                            <h6>Wellington</h6>
+                            <h5> <strike id="strikes">R499</strike> R399</h5>
+                            <div class="options">
+                                <a href="views/cart.html" class="addToCart">Add To Cart <img src="img/shopping-cart.svg" alt=""> </a>
+                                <a href="#" class="wishlisting"> <img src="img/like (2).svg" alt=""> </a>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-12">
+                    <a href="views/shop.html" class="viewcatalog">View Catalog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sell-section my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/sell.jpg" alt="">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1>Time Is Crucial</h1>
+                    <p>There are many reasons why people don't wear watches... they do not have time(time is money)</p>
+                    <p>A watch is a portable timepiece intended to be carried or worn by a person. It is designed to keep a consistent movement despite the motions caused by the person's activities</p>
+                    <a href="views/shop.html" class="shopmore">Shop More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="heading">At Your Service</h1>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/dollar.svg" alt="">
+                    <h5>Save</h5>
+                    <p>We aim to impact and add value to your business</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/truck.svg" alt="">
+                    <h5>Delivery</h5>
+                    <p>We deliver around the country within 3 to 4 business days. Please always track your order.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/medal.svg" alt="">
+                    <h5>Highly Rated</h5>
+                    <p>Our previous clients highly rate the services they received.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/settings.svg" alt="">
+                    <h5>Customise</h5>
+                    <p>Built to fit the style you possess. Carely engineered with that in mind</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/back-arrow.svg" alt="">
+                    <h5>Return</h5>
+                    <p>Read up more on our return policy as some of the purchases cannot be returned to the store .</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/services/truck.svg" alt="">
+                    <h5>Delivery</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, illo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="my-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Store Location</h5>
+                    <ul class="footer-list">
+                        <li>Groblersdal - Store 221</li>
+                        <li>Van Riebiek Street</li>
+                        <li>Limpopo</li>
+                        <li>0121 1212 212</li>
+                        <li>keletsovincent92@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Products</h5>
+                    <ul class="footer-list">
+                        <li>New items</li>
+                        <li>Sales</li>
+                        <li>Ship</li>
+                        <li>Sell</li>
+                        <li>Cart</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Company</h5>
+                    <ul class="footer-list">
+                        <li>About us</li>
+                        <li>Cookies</li>
+                        <li>T's and C's</li>
+                        <li>Policy</li>
+                        <li>Payments</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <input type="text" name="" id="" placeholder="Email...">
+                </div>
+            </div>
+            <p class="text-center">© 2020 - Ecommerce web design by <a style="color: #fff;" href="https://monamatv.netlify.app/">MonamaTV</a></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
